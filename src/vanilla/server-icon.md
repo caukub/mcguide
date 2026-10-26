@@ -5,9 +5,13 @@ The icon must meet the following requirements:
 - file name *server-icon*
 - format (and extension) *png*
 
-If the icon does not meet the required size, the online "resize" tools can be used to adjust the icon size.
+For a rectangular source image, crop a square around the part you want to keep before resizing it to 64x64 pixels. This avoids stretching the image. Export it as PNG, then save it as *server-icon.png*.
+
+An image editor can do these steps. For a browser option, the [ServerBuddy icon maker](https://serverbuddy.net/tools/minecraft-server-icon-maker) crops from the center and exports a 64x64 PNG named *server-icon.png*. Check the preview because the center crop can remove details near the edges.
 
 Thus, the resulting icon must be a 64x64 px *server-icon.png* file. If the icon does not meet one of the requirements, the icon will not appear in the server list.
+
+Upload the prepared file to the server root, alongside *server.properties*. If a proxy provides the icon, use the proxy's directory instead, as explained below.
 
 **After the icon is uploaded, the server must be restarted for the changes to take effect.**
 
